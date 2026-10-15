@@ -63,3 +63,14 @@ Le projet peut être déployé sur Vercel ou une plateforme compatible Next.js. 
 - `lib/supabase.ts` : client Supabase
 - `supabase/schema.sql` : tables et règles de sécurité
 - `.env.example` : variables requises
+
+## PhET simulation integrations
+
+The upgraded lab interface includes embedded PhET HTML5 simulations for:
+- Reactants, Products and Leftovers (`reactants-products-and-leftovers`)
+- States of Matter (`states-of-matter`)
+- Circuit Construction Kit: DC (`circuit-construction-kit-dc`)
+
+These simulations are loaded from PhET's hosted HTML5 pages in an iframe; they are not copied into this repository. An internet connection is required. PhET attribution and licensing terms apply; review the terms for each simulation before redistributing or using them in a commercial offering. If an embed fails on a device or locale, open the simulation directly from https://phet.colorado.edu/en/simulations.
+
+The embedded PhET labs are interactive external simulations. Their internal measurements are not automatically read by ScienceLab; students complete the ScienceLab quiz separately to record mission progress.
